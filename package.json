@@ -1,0 +1,24 @@
+{
+    "name": "comprobot-dashboard",
+    "module": "index.ts",
+    "type": "module",
+"scripts": {
+        "dev": "bun --hot index.ts",
+        "start": "bun index.ts",
+        "install-service": "bun install-service.ts"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/react": "^19.2.17",
+        "@types/react-dom": "^19.2.3"
+    },
+    "peerDependencies": {
+        "typescript": "^6.0.3"
+    },
+    "dependencies": {
+        "appdirsjs": "^1.2.7",
+        "react": "^19.2.7",
+        "react-dom": "^19.2.7",
+        "smol-toml": "^1.6.1"
+    }
+}
