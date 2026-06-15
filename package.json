@@ -1,11 +1,44 @@
 {
     "name": "comprobot-dashboard",
+    "version": "1.0.1",
+    "description": "Web dashboard for Comprobot to start/stop the bot, edit config files, update the Discord profile, and monitor live logs",
     "module": "index.ts",
     "type": "module",
-"scripts": {
+    "bin": {
+        "comprobot-dashboard": "./install-service.ts"
+    },
+    "files": [
+        "index.ts",
+        "frontend.tsx",
+        "index.html",
+        "style.css",
+        "logo.svg",
+        "install-service.ts",
+        "image.png"
+    ],
+    "scripts": {
         "dev": "bun --hot index.ts",
         "start": "bun index.ts",
         "install-service": "bun install-service.ts"
+    },
+    "author": "badluma",
+    "license": "MIT",
+    "keywords": [
+        "comprobot",
+        "discord",
+        "bot",
+        "dashboard"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/badluma/Comprobot-Dashboard.git"
+    },
+    "homepage": "https://github.com/badluma/Comprobot-Dashboard",
+    "bugs": {
+        "url": "https://github.com/badluma/Comprobot-Dashboard/issues"
+    },
+    "engines": {
+        "bun": ">=1.0.0"
     },
     "devDependencies": {
         "@types/bun": "latest",

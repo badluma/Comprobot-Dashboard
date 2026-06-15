@@ -24,18 +24,10 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 ## Install
 
 ```sh
-git clone https://github.com/badluma/Comprobot-Dashboard
-cd Comprobot-Dashboard
-bun install
+bunx comprobot-dashboard
 ```
 
-## Run in background
-
-Installs the dashboard as a system service that starts automatically on login and restarts on crash:
-
-```sh
-bun run install-service
-```
+This installs the dashboard as a background service that starts automatically on login and restarts on crash.
 
 | Platform | Mechanism |
 |----------|-----------|
@@ -43,7 +35,15 @@ bun run install-service
 | Linux | systemd user service (`~/.config/systemd/user/`) |
 | Windows | Startup folder |
 
-The dashboard runs at `http://localhost:7626`. To use a different port, set the `PORT` environment variable before running the install script.
+The dashboard runs at `http://localhost:7626`. To use a different port, set the `PORT` environment variable beforehand.
+
+### Install from source
+
+```sh
+git clone https://github.com/badluma/Comprobot-Dashboard
+cd Comprobot-Dashboard
+bun install
+```
 
 ## Run manually
 
@@ -59,4 +59,4 @@ bun dev
 
 # Disclaimer
 
-This dashboard is entirely made by AI, so there might be bugs or unexpected behavior. If you are a web developer and want to help make a better version, feel free to create a pull request or contact me on [Discord](https://discord.gg/9M2agkVKun)!
+This dashboard is entirely made by AI, so there might be bugs or unexpected behavior. If you are a web developer and want to help make a better version, feel free to contact me on [Discord](https://discord.gg/9M2agkVKun) or just create a pull request.

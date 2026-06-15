@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 import index from "./index.html";
 import appDirs from "appdirsjs";
 import { parse, stringify } from "smol-toml";
