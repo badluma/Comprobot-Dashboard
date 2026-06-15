@@ -1,6 +1,6 @@
 {
     "name": "comprobot-dashboard",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Web dashboard for Comprobot to start/stop the bot, edit config files, update the Discord profile, and monitor live logs",
     "module": "index.ts",
     "type": "module",
